@@ -35,4 +35,5 @@ Los commits deben ser descriptipos y imperativos: ADD Change Fix Remove
 No usarpuntos suspensivos
 Maximo 50 caracteres
 Usar prefijo para los comits: feat fix pert build ci docs refactor style test 
-
+## Clase de git 3
+Nos habla del git hub como crear cuenta y ventajas y desventajas de iniciar con un correo institucional
