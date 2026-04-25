@@ -35,5 +35,25 @@ Los commits deben ser descriptipos y imperativos: ADD Change Fix Remove
 No usarpuntos suspensivos
 Maximo 50 caracteres
 Usar prefijo para los comits: feat fix pert build ci docs refactor style test 
-## Clase de git 3
-Nos habla del git hub como crear cuenta y ventajas y desventajas de iniciar con un correo institucional
+# Clase de git 3
+## Git hub
+### QUE ES GITHUB
+Plataforma en la nube y red social para desarrolladores que permite alojar gestionar y colaborar en proyectos de software utilizando git
+### GIT VS GITHUB
+Git es un sistema de control de versiones
+Git hub Servidor donde se almacenan y se socializan con el mundo
+## SSH VS HTTPS
+### HTTPS
+Si queremos clonar un repo con HTTPS pide autentificacion
+### SSH
+Configurar pc/laptop con ssh parta comunicarnos con github mediante key
+## Configuracciones ssh
+ssh-keygen -t ed25519 -C "tu-correo gamil.com"
+cat -/.ssh/id_ed25519.pub
+ssh -T git github.com
+## Crear repositorio en github
+## Conectar un repositorio local con uno en github
+## Clonar un repo de git
+### Cambios
+Subir cambios git push origin <rama>
+Bajar Cambios git pull origin <rama>
