@@ -57,3 +57,5 @@ ssh -T git github.com
 ### Cambios
 Subir cambios git push origin <rama>
 Bajar Cambios git pull origin <rama>
+## Manejo de ramas
+## Navegacion entre ramas
