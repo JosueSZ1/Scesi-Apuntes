@@ -73,3 +73,5 @@ Es el comando que sube tus cambios al repositorio remoto de esa rama. Se usa tam
 <git push origin rama>
 Si no es tu repositorio, la primera vez que hagas git push de tu rama debes hacerlo con el flag -u para que no tenga que pedir permiso para crear la rama.
 <git pull origin -u rama>
+# Clase de Git 7
+Versionamiento de ramas y cosas asi
