@@ -59,3 +59,17 @@ Subir cambios git push origin <rama>
 Bajar Cambios git pull origin <rama>
 ## Manejo de ramas
 ## Navegacion entre ramas
+# Clases de Git 6 
+## ¿Qué es Git Merge?
+Merge = fusión, entonces git merge nos permite fusionar nuestras ramas en una sola con el fin de que ambas tengan los commits realizados.
+Se agrega el <flag –no-ff> que significa <no fast forward>, hace que no se pierda el historial de ramas y fuerza a hacer un commit para el merge sin que se pierda el historial de ramas, aunque la borras
+## ¿Qué es git fetch?
+Permite ver si hubo cambios en la rama principal y sus ramas hijas, avisa si hubo cambios o no
+## ¿Qué es git pull?
+Permite traer todos los cambios que tiene el repositorio remoto de esa rama. Se usa también con origin y el nombre de la rama para que no tengas problemas al subirla.
+<git pull origin rama>
+## ¿Qué es git push?
+Es el comando que sube tus cambios al repositorio remoto de esa rama. Se usa también con origin y el nombre de la rama para que no tengas problemas al subirla.
+<git push origin rama>
+Si no es tu repositorio, la primera vez que hagas git push de tu rama debes hacerlo con el flag -u para que no tenga que pedir permiso para crear la rama.
+<git pull origin -u rama>
