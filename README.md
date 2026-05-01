@@ -1,5 +1,4 @@
 # Clases de Git
-![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
 **Autor:** Josue Suarez Zabala
 
@@ -77,28 +76,43 @@ Los cambios que estan en staged pasan al historial:
 | Longitud | Maximo 50 caracteres |
 | Prefijos | feat, fix, perf, build, ci, docs, refactor, style, test |
 | Evitar | Puntos suspensivos o mensajes ambiguos |
-# Clase de git 3
-## Git hub
-### QUE ES GITHUB
+
+---
+
+## Clase 3: GitHub y trabajo remoto
+### Que es GitHub?
 Plataforma en la nube y red social para desarrolladores que permite alojar gestionar y colaborar en proyectos de software utilizando git
 ### GIT VS GITHUB
-Git es un sistema de control de versiones
-Git hub Servidor donde se almacenan y se socializan con el mundo
-## SSH VS HTTPS
-### HTTPS
-Si queremos clonar un repo con HTTPS pide autentificacion
-### SSH
-Configurar pc/laptop con ssh parta comunicarnos con github mediante key
-## Configuracciones ssh
-ssh-keygen -t ed25519 -C "tu-correo gamil.com"
-cat -/.ssh/id_ed25519.pub
-ssh -T git github.com
-## Crear repositorio en github
-## Conectar un repositorio local con uno en github
-## Clonar un repo de git
+| Git | GitHub |
+|---|---|
+| Sistema de control de versiones | Plataforma para alojar proyectos Git |
+| Funciona localmente | Facilita colaboracion remota |
+### SSH VS HTTPS
+| Protocolo | Caracteristicas |
+|---|---|
+| HTPS | Suele pedir autenticacion al operar |
+| SSH | Usa llaves para autentificacion segura sin contraseña constante |
+### Configuracciones ssh
+ssh-keygen -t ed25519 -C "tu-correo@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
+### Crear repositorio en github
+1.Vas a tu apartado de repositorios en https://github.com/Tu-user?tab=repositories y Click en “New”
+2.Pones el nombre de tu repositorio, y si quieres una descripción. Y luego click en “Create Repository”
+### Conectar un repositorio local con uno en github
+|git remote add origin git@github.com:TuUser/TuRepo.git|
+|git branch -M main|
+|git push -u origin main|
+
+> Nota: Para usar estos comandos ya tienes que tener inicializado un proyecto git y al menos un commit inicial 
+### Clonar un repo de git
+Para clonar es necesario ejecutar el codigo
+| git clone "linkdelrepoonline"|
 ### Cambios
-Subir cambios git push origin <rama>
-Bajar Cambios git pull origin <rama>
+| Subir cambios | git push origin <rama> |
+| Bajar Cambios | git pull origin <rama> |
+
+> Nota: push = empujar, pull = traer, oritgin = de donde
 ## Manejo de ramas
 ## Navegacion entre ramas
 # Clases de Git 6 
