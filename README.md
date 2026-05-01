@@ -36,32 +36,47 @@ Linus Tolvads se ardio con un versionamiento de paga y lo creo
 ---
 
 ## Clase 2: Estados de Git
-## Los Estados de Git
-(Modificado) Codigo escrito pero no asegurado
-(Stage) Area de espera lo que se planea guardar
-(Confirmado) Cambios con un ID (HASH) guardados
-(Remoto) Repositorio remoto de git
-## Directorio de Trabajo
-Git observa los archivos y los cataloga en
-Untracked: Archivo nuevo se ve pero no hay un estado previo de el
-Modified: Git tiene una version previa del archivo
-Nota: Cualquier archivo que no este en gitignore pasa automaticamente a unos de estos estados
-## Stage area
+### Los Estados de Git principales
+
+| Estado | Descripción |
+|---|---|
+| **Modified** | Archivo modificado, aún no preparado para commit |
+| **Staged** | Archivo en área de preparación |
+| **Committed** | Cambio con un ID (HASH) guardado en el historial local |
+| **Remote** | Cambio sincronizado en repositorio remoto |
+
+### Directorio de Trabajo
+Git observa los archivos y los cataloga en:
+| Tipo | Descripción |
+|---|---|
+| `Untracked` | Archivo nuevo sin seguimiento |
+| `Modified` | Archivo ya versionado con cambios |
+
+> Nota: cualquier archivo no incluido en `.gitignore` entra en alguno de estos estados.
+
+### Stage area (área de preparación)
 Para traer archivos al stage necesitamos 
-git add :<archivo> Agrega al archivo 
-git add . :agrega todo lo modificado
-git restore --staged <archivo> :quita el archivo de stage
-git log --online muestra un id resumido
-git reset --soft HEAD-1  borra el ultimo commit
-## Repositorio Local (confirmado)
-Los cambios que estan en staged pasan al historial
-git commit -m "Mensaje"
+| Comando | Uso |
+|---|---|
+| `git add <archivo>` | Agrega un archivo al stage |
+| `git add .` | Agrega todos los archivos modificados |
+| `git restore --staged <archivo>` | Saca un archivo del stage |
+| `git log --oneline` | Muestra commits resumidos |
+| `git reset --soft HEAD~1` | Revierte el último commit sin perder cambios |
+
+### Repositorio Local (confirmado)
+Los cambios que estan en staged pasan al historial:
+
+| git commit -m "Mensaje" |
+
 ### Buenas practicas
-Git atomicos
-Los commits deben ser descriptipos y imperativos: ADD Change Fix Remove
-No usarpuntos suspensivos
-Maximo 50 caracteres
-Usar prefijo para los comits: feat fix pert build ci docs refactor style test 
+| Reglas | Recomendacion |
+|---|---|
+| Commits atomicos | Un cambio logico por commit |
+| Mensaje claro | Usar verbo imperativo: Add, Fix, Remove, Change |
+| Longitud | Maximo 50 caracteres |
+| Prefijos | feat, fix, perf, build, ci, docs, refactor, style, test |
+| Evitar | Puntos suspensivos o mensajes ambiguos |
 # Clase de git 3
 ## Git hub
 ### QUE ES GITHUB
