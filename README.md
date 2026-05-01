@@ -1,5 +1,8 @@
 # Clases de Git
 
+<p align="center">
+  <img src="./images/Git.jpeg" alt="Imagen del proyecto" width="260">
+</p>
 <p align="center"><strong>Autor: Josue Suarez Zabala</strong></p>
 
 ---
@@ -277,3 +280,4 @@ En resumen una serie de pasos que estan en [Ver Video en Youtube](https://youtu.
 En proseso
 ---
 ## Clase 8: The Finale
+No se que poner aqui pero agradezco al Isaac mi gran amigo por compartir su conocimiento con nosotros y por la foto principal xd
