@@ -100,9 +100,9 @@ ssh -T git@github.com
 1.Vas a tu apartado de repositorios en https://github.com/Tu-user?tab=repositories y Click en “New”
 2.Pones el nombre de tu repositorio, y si quieres una descripción. Y luego click en “Create Repository”
 ### Conectar un repositorio local con uno en github
-|git remote add origin git@github.com:TuUser/TuRepo.git|
-|git branch -M main|
-|git push -u origin main|
+| git remote add origin git@github.com:TuUser/TuRepo.git |
+| git branch -M main |
+| git push -u origin main |
 
 > Nota: Para usar estos comandos ya tienes que tener inicializado un proyecto git y al menos un commit inicial 
 ### Clonar un repo de git
@@ -113,9 +113,49 @@ Para clonar es necesario ejecutar el codigo
 | Bajar Cambios | git pull origin <rama> |
 
 > Nota: push = empujar, pull = traer, oritgin = de donde
-## Manejo de ramas
-## Navegacion entre ramas
-# Clases de Git 6 
+
+---
+
+## Clase 4: SSH Multiple y Checkout
+### Git Remote
+Comando que nos permite gestionar nuestras conexiones con los repos remotos.
+### Comandos utiles
+| git remote -v | Permite ver las URLs exactas de donde apunta a nuestro repositorio |
+| git remote add <apodo> “url” | Vincula el repo local con uno en la nube |
+| git remote set-url <apodo> “url” | Cal la URL donde apunta nuestro repo |
+### Multiples SSH
+### Configurar multiples SSH
+| Generamos el sshkey en con otro nombre: | ssh-keygen -t ed25519 -C "micorreo@gmail.com" -f ~/.ssh/id_miname |
+| Creamos un archivo config para que no choquen las key |  # Cuenta del otro correo, Host github-miname, HostName github.com, User git, IdentityFile ~/.ssh/id_miname |
+| Para verificar si funciona ejecutamos el comando: | ssh -T git@github-miname |  
+### Configuraciones locales
+Es decir por repositorio, local se impone a lo global, por lo cula necesitamos hacer
+| git config user.name "Mi nuevo Name" | git config user.email "micorreo@gmail.com" |
+### Git Checkout
+Comando, permite desplazar el HEAD (lector actual) hacia un punto especifico de la historia o una rama distinta
+| Para que sirve |
+| Inspeccionar: | Ver como ere el codigo en un commit antiguo |
+| Restaurar: | Recuperar archivos borrados o cambiados |
+| Experimentar: | Probar sin tocar la rama principal |
+| Cambiar: | saltar de una rama a otra |
+### El Estado "Detached HEAD"
+Normalmente el HEAD apunta a una rama (que se mueve), En estado desacoplado, el HEAD apunta directamente a un Commit (que es fijo).
+### ¿Cómo ir y volver de un commit?
+| Comando | Que hace |
+|---|---|
+| git checkout <hash_antiguo> | Para ir atras |
+| git checkout <rama> | Para volver al ultimo hash |
+| git checkout <hash_commit_creado> | Salvar un commit |
+| git checkout -b rama_nueva |  | 
+### Buenas Practicas
+| No trabajes mucho tiempo en 'Detached HEAD' |
+| Limpia tu Directorio de trabajo |
+| Úsalo para aprender |
+
+---
+
+## Clase 5: Ramas y Git Flow para principiantes
+## Clase 6: Merge y sincronización
 ## ¿Qué es Git Merge?
 Merge = fusión, entonces git merge nos permite fusionar nuestras ramas en una sola con el fin de que ambas tengan los commits realizados.
 Se agrega el <flag –no-ff> que significa <no fast forward>, hace que no se pierda el historial de ramas y fuerza a hacer un commit para el merge sin que se pierda el historial de ramas, aunque la borras
@@ -129,5 +169,8 @@ Es el comando que sube tus cambios al repositorio remoto de esa rama. Se usa tam
 <git push origin rama>
 Si no es tu repositorio, la primera vez que hagas git push de tu rama debes hacerlo con el flag -u para que no tenga que pedir permiso para crear la rama.
 <git pull origin -u rama>
+
 # Clase de Git 7
 Versionamiento de ramas y cosas asi
+## Clase 7: Versionamiento de ramas
+## Clase 8: Pull Request "La libertad de expresion deberas no importa xd
