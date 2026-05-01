@@ -1,5 +1,21 @@
 # Clases de Git 1
-Josue suarez Zabala
+![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
+
+**Autor:** Josue Suarez Zabala
+
+---
+## Índice
+- [Clase 1: Introducción a Git](#clase-1-introducción-a-git)
+- [Clase 2: Estados de Git](#clase-2-estados-de-git)
+- [Clase 3: GitHub y trabajo remoto](#clase-3-github-y-SSH)
+- [Clase 4: SSH Multiple y Checkout](#clase-4-github-SSH-multiple-y-checkout)
+- [Clase 5: Ramas y Git Flow para principiantes](#clase-5-gitflow-ramas)
+- [Clase 6: Merge y sincronización](#clase-6-merge-y-sincronización)
+- [Clase 7: Versionamiento de ramas](#clase-7-versionamiento-de-ramas)
+- [Clase 3: Pull Request "La libertad de expresion deberas no importa xd"](#clase-8-PullRequest-PR)
+
+---
+
 ## Que es git
 Control de Versionamiento
 ## Como Nacio Git
