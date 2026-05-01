@@ -153,7 +153,7 @@ Normalmente el HEAD apunta a una rama (que se mueve), En estado desacoplado, el 
 | Comando | Que hace |
 |---|---|
 | git checkout <hash_antiguo> | Para ir atras |
-| git checkout <rama> | Para volver al ultimo hash |
+| git checkout "<rama>" | Para volver al ultimo hash |
 | git checkout <hash_commit_creado> | Salvar un commit |
 | git checkout -b rama_nueva |  | 
 ### Buenas Practicas
@@ -163,7 +163,6 @@ Normalmente el HEAD apunta a una rama (que se mueve), En estado desacoplado, el 
 | Úsalo para aprender |
 
 ---
-
 ## Clase 5: Ramas y Git Flow para principiantes
 La base del trabajo en equipo remoto
 ### Que son las ramas?
@@ -173,13 +172,13 @@ Comando que nos permite gestionar las ramas que tiene o tendra nuestro proyecto
 ### Comandos utiles
 | git branch | Lista las ramas disponibles y nos muestra nuestro HEAD |
 |---|---|
-| git branch <rama> | Creas una rama a partir de la ramam actual |
-| git branch -D <rama> | Borra la rama |
+| git branch "<rama>" | Creas una rama a partir de la ramam actual |
+| git branch -D "<rama>" | Borra la rama |
 ### Git Checkout enfocado en ramas
 Git checkout tambien sirve para las ramas
-| git checkout <rama> | Cambiar de rama |
+| git checkout "<rama>" | Cambiar de rama |
 |---|---|
-| git checkout -b <rama> | Crea un ramma y temueve directamente a ella |
+| git checkout -b "<rama>" | Crea un ramma y temueve directamente a ella |
 
 > Nota: No debemos tener nada en modified/untracked o Staged
 ### Git Checkout vs Git Switch
@@ -203,25 +202,26 @@ Flujo de trabajo, nos permite trabajar de manera ordenada en nuestra ramas
 | feature | develop | develop |
 | release | develop | main y develop |
 | hotfix | main | main y develop |
+
+---
 ## Clase 6: Merge y sincronización
-## ¿Qué es Git Merge?
+### ¿Qué es Git Merge?
 Merge = fusión, entonces git merge nos permite fusionar nuestras ramas en una sola con el fin de que ambas tengan los commits realizados.
-Se agrega el <flag –no-ff> que significa <no fast forward>, hace que no se pierda el historial de ramas y fuerza a hacer un commit para el merge sin que se pierda el historial de ramas, aunque la borras
-## ¿Qué es git fetch?
+Se agrega el <flag –no-ff> que significa "<no fast forward>", hace que no se pierda el historial de ramas y fuerza a hacer un commit para el merge sin que se pierda el historial de ramas, aunque la borras
+### ¿Qué es git fetch?
 Permite ver si hubo cambios en la rama principal y sus ramas hijas, avisa si hubo cambios o no
-## ¿Qué es git pull?
+### ¿Qué es git pull?
 Permite traer todos los cambios que tiene el repositorio remoto de esa rama. Se usa también con origin y el nombre de la rama para que no tengas problemas al subirla.
-| <git pull origin rama> |
+| "<git pull origin rama>" |
 |---|
-## ¿Qué es git push?
+### ¿Qué es git push?
 Es el comando que sube tus cambios al repositorio remoto de esa rama. Se usa también con origin y el nombre de la rama para que no tengas problemas al subirla.
-| <git push origin rama> |
+| "<git push origin rama>" |
 |---|
 Si no es tu repositorio, la primera vez que hagas git push de tu rama debes hacerlo con el flag -u para que no tenga que pedir permiso para crear la rama.
-| <git pull origin -u rama> |
+| "<git pull origin -u rama>" |
 |---|
 
-# Clase de Git 7
-Versionamiento de ramas y cosas asi
+---
 ## Clase 7: Versionamiento de ramas
 ## Clase 8: Pull Request "La libertad de expresion deberas no importa xd
