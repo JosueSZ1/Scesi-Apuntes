@@ -1,4 +1,4 @@
-# Clases de Git 1
+# Clases de Git
 ![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
 **Autor:** Josue Suarez Zabala
@@ -12,19 +12,30 @@
 - [Clase 5: Ramas y Git Flow para principiantes](#clase-5-gitflow-ramas)
 - [Clase 6: Merge y sincronización](#clase-6-merge-y-sincronización)
 - [Clase 7: Versionamiento de ramas](#clase-7-versionamiento-de-ramas)
-- [Clase 3: Pull Request "La libertad de expresion deberas no importa xd"](#clase-8-PullRequest-PR)
+- [Clase 8: Pull Request "La libertad de expresion deberas no importa xd"](#clase-8-PullRequest-PR)
 
 ---
 
-## Que es git
-Control de Versionamiento
-## Como Nacio Git
+## Clase 1: Introducción a Git
+### Que es git?
+Es un Sistema de "Control de Versionamiento"
+### Como Nacio Git?
 Linus Tolvads se ardio con un versionamiento de paga y lo creo
-## Como instalar git
-Mediante el instalador de paquetes de linux apt get o descargando el ejecutable en windows
-## Configuraciones Basicas Y todo de git:x
-El git init para inicializar proyextos El git status para verificar archivos del repositorio El git log para verificar cambios en el git con fecha hora y quien fue 
-# Clase de Git 2
+### Como instalar git?
+| Sistema | Método |
+|---|---|
+| Linux | `sudo apt install git` |
+| Windows | Descargar instalador desde [git-scm.com](https://git-scm.com/) |
+### Configuraciones Basicas Y todo de git:x
+| Comando | Descripción |
+|---|---|
+| `git init` | Inicializa un repositorio local |
+| `git status` | Muestra el estado de los archivos |
+| `git log` | Muestra historial de commits (fecha, autor, cambios) |
+
+---
+
+## Clase 2: Estados de Git
 ## Los Estados de Git
 (Modificado) Codigo escrito pero no asegurado
 (Stage) Area de espera lo que se planea guardar
