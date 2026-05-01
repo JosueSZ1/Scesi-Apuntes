@@ -100,6 +100,7 @@ ssh -T git@github.com
 1.Vas a tu apartado de repositorios en https://github.com/Tu-user?tab=repositories y Click en “New”
 2.Pones el nombre de tu repositorio, y si quieres una descripción. Y luego click en “Create Repository”
 ### Conectar un repositorio local con uno en github
+|---|
 | git remote add origin git@github.com:TuUser/TuRepo.git |
 | git branch -M main |
 | git push -u origin main |
@@ -109,6 +110,7 @@ ssh -T git@github.com
 Para clonar es necesario ejecutar el codigo
 | git clone "linkdelrepoonline"|
 ### Cambios
+|---|---|
 | Subir cambios | git push origin <rama> |
 | Bajar Cambios | git pull origin <rama> |
 
@@ -120,20 +122,24 @@ Para clonar es necesario ejecutar el codigo
 ### Git Remote
 Comando que nos permite gestionar nuestras conexiones con los repos remotos.
 ### Comandos utiles
+|---|---|
 | git remote -v | Permite ver las URLs exactas de donde apunta a nuestro repositorio |
 | git remote add <apodo> “url” | Vincula el repo local con uno en la nube |
 | git remote set-url <apodo> “url” | Cal la URL donde apunta nuestro repo |
 ### Multiples SSH
 ### Configurar multiples SSH
+|---|---|
 | Generamos el sshkey en con otro nombre: | ssh-keygen -t ed25519 -C "micorreo@gmail.com" -f ~/.ssh/id_miname |
 | Creamos un archivo config para que no choquen las key |  # Cuenta del otro correo, Host github-miname, HostName github.com, User git, IdentityFile ~/.ssh/id_miname |
 | Para verificar si funciona ejecutamos el comando: | ssh -T git@github-miname |  
 ### Configuraciones locales
 Es decir por repositorio, local se impone a lo global, por lo cula necesitamos hacer
+|---|---|
 | git config user.name "Mi nuevo Name" | git config user.email "micorreo@gmail.com" |
 ### Git Checkout
 Comando, permite desplazar el HEAD (lector actual) hacia un punto especifico de la historia o una rama distinta
-| Para que sirve |
+|---|---|
+| Para que sirve |  |
 | Inspeccionar: | Ver como ere el codigo en un commit antiguo |
 | Restaurar: | Recuperar archivos borrados o cambiados |
 | Experimentar: | Probar sin tocar la rama principal |
@@ -148,6 +154,7 @@ Normalmente el HEAD apunta a una rama (que se mueve), En estado desacoplado, el 
 | git checkout <hash_commit_creado> | Salvar un commit |
 | git checkout -b rama_nueva |  | 
 ### Buenas Practicas
+|---|
 | No trabajes mucho tiempo en 'Detached HEAD' |
 | Limpia tu Directorio de trabajo |
 | Úsalo para aprender |
