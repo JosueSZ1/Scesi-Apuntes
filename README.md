@@ -14,7 +14,7 @@
 - [Clase 5: Ramas y Git Flow para principiantes](#clase-5-gitflow-ramas)
 - [Clase 6: Merge y sincronización](#clase-6-merge-y-sincronización)
 - [Clase 7: Pull Request](#clase-7-PullRequest-PR)
-- [Clase 8: The Finale](#clase-8-The-Finale)
+- [Clase 8: The Finale Git diff, git stash y que hacer cuando haces un PR que fue interrumpido](#clase-8-The-Finale)
 
 ---
 
@@ -236,48 +236,109 @@ Primero ejecutar el comando
 y luego sigue los pasos de [Ver video en YouTube](https://youtu.be/4CeMKqloOJc)
 ### Flujo de Trabajo
 Inicio
+
   ↓
+
 git checkout develop
+
   ↓
+
 git fetch
+
   ↓
+
 git pull origin develop
+
   ↓
+
 git checkout rama (-b si es nueva)
+
   ↓
+
 git merge develop (si hubo cambios)
+
   ↓
+
 Trabajas en tu rama
+
   ↓
+
 git push origin rama (-u si es primera vez)
+
   ↓
+
 --------- REMOTO ---------
+
   ↓
+
 git checkout develop
+
   ↓
+
 git fetch
+
   ↓
+
 git checkout rama
+
   ↓
+
 git merge develop (antes de PR)
+
   ↓
+
 Resolver conflictos manualmente
+
   ↓
+
 git add .
+
   ↓
+
 git commit
+
   ↓
+
 (guardar con nano: Ctrl+O, Enter, Ctrl+X)
+
   ↓
+
 git push origin rama
+
   ↓
+
 Fin
+
 ### Por que usar pull request?
 Por temas de seguridad, impedir que el codigo quede a merced de cualquiera, crea mas colaboracion en el equipo y nos permite un mejor manejo grupal de nuestro repo
 ### Como proteger mi repo y limitar la colaboracion
 En resumen una serie de pasos que estan en [Ver Video en Youtube](https://youtu.be/ZdLomug2-UQ)
 ### Como colaboro al proyecto si no soy un colaborador invitador?
-En proseso
+En proceso
 ---
-## Clase 8: The Finale
-No se que poner aqui pero agradezco al Isaac mi gran amigo por compartir su conocimiento con nosotros y por la foto principal xd
+## Clase 8: The Finale Git diff, git stash y que hacer cuando haces un PR que fue interrumpido
+### Git Diff
+Te muestra diferencias entre versiones de archivos.
+### Usos comunes
+| git diff | Muestra cambios no staged (aún no agregados con git add). |
+|---|---|
+| git diff --staged | Muestra cambios que ya están en stage. |
+| git diff HEAD | Muestra todo lo cambiado respecto al último commit. |
+| git diff rama1..rama2 | Compara dos ramas. |
+### Git Stash
+Guarda cambios temporales sin hacer commit.
+### Comandos utiles
+| git stash list | muestra la lista de stashes guardado |
+|---|---|
+| it stash pop | recupera el último stash y lo elimina de la lista automáticamente. |
+### Que pasa cuando haces un PR que fue interrumpido
+1.Guardar lo que tienes 
+2.Actualizar tu develop
+3.Vuelve a tu rama y reintenta
+### Que hacer si tu PR tiene comflictos
+1.Ir al develop
+2.Traer los cambios actuales
+3.Arreglar los comflictos viendo las diferencias entre los archivos
+4.Volver a publicar un nuevo PR 
+
+Ya se que poner aqui, agradezco al Isaac mi gran amigo por compartir su conocimiento con nosotros y por la foto principal xd
